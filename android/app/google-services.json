@@ -1,0 +1,54 @@
+{
+  "project_info": {
+    "project_number": "735445953619",
+    "project_id": "flash-chat-c04d2",
+    "storage_bucket": "flash-chat-c04d2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:735445953619:android:a227a1d40c1295573daaa6",
+        "android_client_info": {
+          "package_name": "com.example.flash_chat_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "735445953619-jnpljpifcr2bbskrd44ajfqgjrqjgb5b.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.flash_chat_app",
+            "certificate_hash": "a5328ba1b7d035933811ebe8d3eeb1084c19c059"
+          }
+        },
+        {
+          "client_id": "735445953619-5itev41447f31gde329bum8cv9e2nrtk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDNb3tTi7jZZ5BVckNjdv30uJbEqW6EAHA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "735445953619-5itev41447f31gde329bum8cv9e2nrtk.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "735445953619-s0le7vhqo5chjnoddfpb72ir5uv3vs60.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.flashChatApp"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
