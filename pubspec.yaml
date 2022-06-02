@@ -26,6 +26,8 @@ dependencies:
   cloud_firestore: ^3.1.15
   flutter_spinkit: ^5.1.0
   animated_text_kit: ^4.2.1
+  validatorless: ^1.2.1
+ 
 
 dev_dependencies:
   flutter_test:

@@ -3,6 +3,7 @@ import 'package:flash_chat_app/commponent/RoundedButton.dart';
 import 'package:flash_chat_app/constants.dart';
 import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
+import 'package:validatorless/validatorless.dart';
 
 class LoginScreen extends StatefulWidget {
   @override
@@ -34,15 +35,19 @@ class _LoginScreenState extends State<LoginScreen> {
             SizedBox(
               height: height48,
             ),
-            TextField(
-                textAlign: TextAlign.center,
-                keyboardType: TextInputType.emailAddress,
-                onChanged: (value) {
-                  var email = value;
-                },
-                decoration: kinputTextFieldecoration.copyWith(
-                  hintText: enteremail
-                )),
+            TextFormField(
+              validator: Validatorless.multiple([
+                Validatorless.email('The field must be an email'),
+                Validatorless.required('The field is obligatory')
+              ]),
+              textAlign: TextAlign.center,
+              keyboardType: TextInputType.emailAddress,
+              onChanged: (value) {
+                var email = value;
+              },
+              decoration:
+                  kinputTextFieldecoration.copyWith(hintText: enteremail),
+            ),
             Mysizeddbox(
               height: height48,
             ),
@@ -50,19 +55,17 @@ class _LoginScreenState extends State<LoginScreen> {
                 textAlign: TextAlign.center,
                 obscureText: true,
                 onChanged: (value) {
-                  var  password = value;
+                  var password = value;
                 },
-                decoration: kinputTextFieldecoration.copyWith(
-                  hintText: enterPassword 
-                )),
+                decoration:
+                    kinputTextFieldecoration.copyWith(hintText: enterPassword)),
             SizedBox(
               height: 24.0,
             ),
             Roundedbutton(
-              onPressed: () => Navigator.pushNamed(context, 'chatScreen'),
-              specifyColour: Colors.lightBlueAccent,
-              theText: login
-            ),
+                onPressed: () => Navigator.pushNamed(context, 'chatScreen'),
+                specifyColour: Colors.lightBlueAccent,
+                theText: login),
           ],
         ),
       ),
